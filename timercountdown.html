@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--==Import-Monoton-Font====================-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+</head>
+<body>
+    <style>
+        .secondes{
+            font-size: 50px;
+            border: 10px solid #84817a;
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            display: flex;
+            font-family: Monoton;
+            justify-content: center;
+            align-items: center;
+            color: #1e272e;
+            box-shadow: 8px 10px 20px rgba(0,0,0,0.5);
+        }
+    </style>
+    <div class="secondes">10</div>
+    <script>
+        let time = 10
+        setInterval(()=>{
+            time --;
+            if(time >= 0)
+            {
+                document.querySelector(".secondes").innerHTML = time;
+            }
+            
+        }, 1000)
+    </script>
+</body>
+</html>
